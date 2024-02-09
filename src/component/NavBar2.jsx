@@ -18,7 +18,7 @@ function NavBar2() {
  
 
   useEffect(()=>{
-   axios.get("http://localhost:8000/CheckLogin" ,{withCredentials:true} ).then((data)=>{
+   axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{withCredentials:true} ).then((data)=>{
     console.log(data.status)
        if (data.status == 200)
        {
