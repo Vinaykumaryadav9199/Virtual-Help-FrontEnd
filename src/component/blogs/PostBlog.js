@@ -83,7 +83,7 @@ const PostBlog = () => {
                         Description: Description,
                         BlogBody: BlogBody,
                     }
-                    axios.post("http://localhost:8000/blogPost", blogData).then((res) => {
+                    axios.post("https://virtual-help-backend.vercel.app/blogPost", blogData).then((res) => {
                         setTimeout(() => {
                             toast.success(res.data.message)
                         }, 1);
