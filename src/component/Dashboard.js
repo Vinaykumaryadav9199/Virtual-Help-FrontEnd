@@ -38,7 +38,7 @@ const DeleteNotes = (ObjectId, filePath) => {
   //   //   + fileRef.exists())
 
 
-  axios.post("http://localhost:8000/deleteNotes", { ObjectId }).then((data) => {
+  axios.post("https://virtual-help-backend.vercel.app/deleteNotes", { ObjectId }).then((data) => {
     setTimeout(() => {
       toast.success(data.data.message)
     }, 1);
@@ -86,7 +86,7 @@ const DeletePyqs = (ObjectId, filePath) => {
   //     + fileRef.exists())
 
 
-  axios.post("http://localhost:8000/deletePyqs", { ObjectId }).then((data) => {
+  axios.post("https://virtual-help-backend.vercel.app/deletePyqs", { ObjectId }).then((data) => {
     setTimeout(() => {
       toast.success(data.data.message)
     }, 1);
@@ -131,7 +131,7 @@ const DeleteBlog = (ObjectId, filePath) => {
   // console.log("File in database after delete exists : "
   //   + fileRef.exists())
 
-  axios.post("http://localhost:8000/deleteBlog", { ObjectId }).then((data) => {
+  axios.post("https://virtual-help-backend.vercel.app/deleteBlog", { ObjectId }).then((data) => {
 
     setTimeout(() => {
       toast.success(data.data.message)
@@ -168,7 +168,7 @@ const Dashboard = () => {
 
 
   useEffect(() => {
-    axios.get("http://localhost:8000/CheckLogin" ,{ withCredentials: true }).then((data) => {
+    axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{ withCredentials: true }).then((data) => {
       console.log(data.status)
 
       if (data.status == 200) {
@@ -191,7 +191,7 @@ const Dashboard = () => {
     
 
 
-    axios.get("http://localhost:8000/allData", { withCredentials: true, }).then((data) => {
+    axios.get("https://virtual-help-backend.vercel.app/allData", { withCredentials: true, }).then((data) => {
       setBlogs(data.data.Blogs);
       setPyqs(data.data.Pyqs)
       setNotes(data.data.Notes)
@@ -205,7 +205,7 @@ const Dashboard = () => {
   )
 
   const logoutHandel = () => {
-    axios.get("http://localhost:8000/logout").then((data) => {
+    axios.get("https://virtual-help-backend.vercel.app/logout").then((data) => {
       toast.success("Logout Success")
     }).catch((err) => {
       toast.error(err)
