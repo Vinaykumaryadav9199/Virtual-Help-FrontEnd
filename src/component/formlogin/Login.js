@@ -24,7 +24,7 @@ const Login = () => {
      
      
     })
-  } ,[])
+  } )
   
   const handelChange = (e)=>{
     const {name ,value} = e.target;
