@@ -33,7 +33,7 @@ const ShowBlogs = () => {
 
   useEffect(() => {
     AOS.init({ offset: 20,});
-    axios.get("https://virtual-help-backend.vercel.app/showblogs").then((data) => {
+    axios.get("https://virtual-help-backend-git-main-vinay-kumar-yadavs-projects.vercel.app/showblogs").then((data) => {
       setBlogs(data.data);
 
     })
