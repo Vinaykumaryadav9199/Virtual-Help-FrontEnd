@@ -40,13 +40,13 @@ const App = () => {
 
     useEffect(()=>{
       AOS.init({ offset: 20,});
-      axios.get("http://localhost:8000/getNotes").then((data)=>{
+      axios.get("https://virtual-help-backend.vercel.app/getNotes").then((data)=>{
         setgetNotes(data.data)
       }).catch((err)=>{
         console.error(err);
       })
 
-      axios.get("http://localhost:8000/CheckLogin" ,{ withCredentials: true,}).then((data)=>{
+      axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{ withCredentials: true,}).then((data)=>{
        if (data.status == 200)
        {
         setisLogin(true)
@@ -103,7 +103,7 @@ const uploadTask =  uploadBytesResumable(storageRef, File);
           }
           
           
-      axios.post("http://localhost:8000/notes/upload",notes).then((res)=>
+      axios.post("https://virtual-help-backend.vercel.app/notes/upload",notes).then((res)=>
       {
         console.log(res);
         // alert(res.data.message)
@@ -160,7 +160,7 @@ const uploadTask =  uploadBytesResumable(storageRef, File);
         Course:course,
         Semester:Sem,
         Subject:Subject}
-        axios.post("http://localhost:8000/notes/search" , Search).then((data)=>{
+        axios.post("https://virtual-help-backend.vercel.app/notes/search" , Search).then((data)=>{
 
         if (data.data.length !==0){
           
