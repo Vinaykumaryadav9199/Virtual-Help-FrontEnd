@@ -25,7 +25,7 @@ const ForgetPassword = () => {
           setButtonDisabled(false);
         }, 30000); 
 
-        axios.post("http://localhost:8000/forgetPasswordOtp" ,RestPasswordFormData).then((res)=>{
+        axios.post("https://virtual-help-backend.vercel.app/forgetPasswordOtp" ,RestPasswordFormData).then((res)=>{
             // alert(res.data.message)
             toast.info(res.data.message)
         })
@@ -33,7 +33,7 @@ const ForgetPassword = () => {
 
     const handelRestPassword =(e)=>{
         e.preventDefault()
-        axios.post("http://localhost:8000/resetPassword",RestPasswordFormData).then((res)=>
+        axios.post("https://virtual-help-backend.vercel.app/resetPassword",RestPasswordFormData).then((res)=>
         {
             // alert(res.data.message);
             toast.info(res.data.message)
