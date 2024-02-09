@@ -11,7 +11,7 @@ const Login = () => {
 
 
   useEffect(()=>{
-    axios.get("http://localhost:8000/CheckLogin" ,{ withCredentials: true }).then((data) => {
+    axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{ withCredentials: true }).then((data) => {
       console.log(data.status)
 
       if (data.status == 200) {
@@ -38,7 +38,7 @@ const Login = () => {
 
   const handelSignin =(e)=>{
     e.preventDefault();
-    axios.post("http://localhost:8000/Login" , LoginFormData , { withCredentials: true }).then((res)=>{
+    axios.post("https://virtual-help-backend.vercel.app/Login" , LoginFormData , { withCredentials: true }).then((res)=>{
       if (res.data.code === 200)
       {
         // alert(res.data.message)
