@@ -34,7 +34,7 @@ export const Signup = () => {
             toast.info("Password Does not match with confirm Password")
             return
         }
-        axios.post("http://localhost:8000/sendOtp", SignupFormData).then((res) => {
+        axios.post("https://virtual-help-backend.vercel.app/sendOtp", SignupFormData).then((res) => {
             if (res.data.code === 422) {
                 // alert("user Already register ")
                 toast.info("user Already register")
@@ -56,7 +56,7 @@ export const Signup = () => {
 
     const handelSignup = (e) => {
         e.preventDefault()
-        axios.post("http://localhost:8000/Signup", SignupFormData).then((res) => {
+        axios.post("https://virtual-help-backend.vercel.app/Signup", SignupFormData).then((res) => {
             if (res.data.code === 200) {
                 // alert(res.data.message);
                 setTimeout(() => {
