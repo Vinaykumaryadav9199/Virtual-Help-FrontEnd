@@ -1,0 +1,67 @@
+{
+    "Select Your Program":{"Select Your Course":{
+      "Select Your Semester":["Select Your Subject"]
+  }
+
+    }
+      ,
+    "UG":
+    { 
+        "Select Your Course":{
+        "Select Your Semester":["Select Your Subject"]
+      },
+      "Bachelor of Technology (B. Tech) in Computer Science and Engineering" :{
+        "Select Your Semester":["Select Your Subject"],
+        "Third Semester" :["Select Your Subject","Data Structure And Algorithms","Mathematics-3","Digital Electronics","Fundamentals of Management","Computer Organisation And Architecture"],
+        "Fourth Semester":["Select Your Subject","DBMS","object Orienting Programming Using C++","Econimics","Enviromental Science","Discret Structure"],
+        "Fifth Semester" :["Select Your Subject", "Analysis and Design of Algorithms" ,"Theory of Computation","Computer Network","Microprocessor and Interfacing "],
+        "Sixth Semester" :["Select Your Subject","Principle of Operating System ","Software Engineering","Data Warehousing and Data Mining "],
+        "Seventh Semester":["Select Your Subject" ,"Machine Learning " ,"Principles of Cloud Computing" ,"Information Security" ,"Software Testing " ,"Big Data Analytics ","High Performance Computing","Digital Image Processing"],
+        "Eighth Semester":["Select Your Subject" ,"Software Project Management" ,"Natural Language Processing","Professional Ethics and IPR" ,"Internet of things" ,"Cyber Security" ,"Information Retrieval "]
+
+
+
+
+      },
+      "Bachelor of Technology (B. Tech) in Civil Engineering":{
+        "Select Your Semester":["Select Your Subject"],
+        "Third Semester":["Select Your Subject","Maths-3","Strength Of Materials","SURVEYING","FLUID MECHANICS-I","BUILDING CONSTRUCTION AND  MATERIALS","ENVIRONMENTAL SCIENCES"],
+        "Fourth Semester":["Select Your Subject","STRUCTURALANALYSIS - І","FLUID MECHANICS-II","GEOMATIC ENGG","TRANSPORTATION   ENGINEERING - І","MECHANICAL ENGINEERING","GENERAL FITNESS IN CIVIL ENGINEERING"]
+      }
+      ,
+      "Bachelor of Technology (B. Tech) in Electrical Engineering":{
+        "Select Your Semester":["Select Your Subject"],
+        "Third Semester":["Select Your Subject","Electrical Circuit Analysis ","Semiconductor Devices and Circuits ","Semiconductor Devices and Circuits Laboratory","Electrical Machines-I ","Electrical Machines Laboratory-I","Measurements  and Instrumentation","Measurements and Instrumentation Laboratory ","Environment Studies"],
+        "Fourth Semester":["Select Your Subject","Logic and Sequential Circuits","Logic and Sequential       Circuits Laboratory","Electrical Machines – II","Power Systems – I","Signals and Systems","Indian Constitution"],
+        "Fifth Semester":["Select Your Subject","Power Electronics","Control Systems","Electromagnetic Fields","Economics for Engineers","Advanced Network Analysis"]
+
+      }
+
+
+
+
+
+    },
+    "PG":{  
+        "Select Your Course":{
+        "Select Your Semester":["Select Your Subject"]
+      },
+          "Master of Biochemistry":{
+            "Select Your Semester":["Select Your Subject"],
+            "First Semester":["Select Your Subject","Cell and Molecular Biology","Biomolecules and Metabolism"," Analytical Biochemistry"," Protein Biochemistry"],
+            "Second Semester":["Select Your Subject","Enzymology & Enzyme technology","Immunology","Recombinant DNA Technology","Bioinformatics","Cell Culture Technology","Biochemical Toxicology","Biostatistics "],
+            "Third Semester":["Select Your Subject","Genomics and Proteomics","Clinical Biochemistry","Plant Biochemistry"," Cancer Biology","Molecular Diagnostics","Computational Biology","Human Health and Disease "]
+    
+          },
+        
+          
+          "Master of Arts (History and Archeology)" :{
+            "Select Your Semester":["Select Your Subject"],
+            "First Semester" :[ "Select Your Subject","Introduction to History and Its Research Methods","Introduction to Archaeology","Culture in  Ancient India","Medieval Europe"],
+            "Second Semester" :["Select Your Subject","Historiography from Ancient to Contemporary World","Pre History of South Asia","Rise of Modern West","Modern World: 1789 to 1945","Medieval Islam"],
+            "Third Semester":["Select Your Subject","Proto History of India","Historical Archaeology of India"],
+            "Fourth Semester":["Select Your Subject","Dissertation","Science in Archaeology"]
+
+          }
+      }
+}

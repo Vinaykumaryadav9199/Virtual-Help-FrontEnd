@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.footer{
+    display: flex;
+
+    justify-content: space-between;
+    background: white;
+    height: 45vh;
+    width: 100%;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 40vh;
+    width: 35%;
+   
+}
+.contact p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Roboto", serif;
+}
+
+
+.phone {
+    display: flex;
+}
+.phone img , .message img{
+    margin-left: 0px;
+    width: 4vw;
+    height: 4vh;
+}
+.message{
+    display: flex;
+    margin-top: 2vh;
+}
+
+
+.location {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+   
+}
+.location img{
+    width: 6vw;
+    height: 6vh;
+   
+  
+}
+.menu{
+    display: flex;
+    color: mediumorchid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 42vh;
+    width: 25%;
+  
+}
+.menu h2{
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.1vw;
+    font-size: 2rem;
+    
+}
+.menu a{
+    margin-top: 0.3rem;
+    color: black;
+    font-weight: 500;
+}
+.menu a:hover{
+    color: red;
+}
+
+.map{
+    height: 40vh;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 2px;
+}
+.cuhMap{
+    margin-top: 4vh;
+    height: 95%;
+    width: 95%;
+    border: none;
+}
