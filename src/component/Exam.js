@@ -40,13 +40,13 @@ const Exam = () => {
   
   useEffect(()=>{
     AOS.init({ offset: 20,});
-    axios.get("http://localhost:8000/getpyq").then((data)=>{
+    axios.get("https://virtual-help-backend.vercel.app/getpyq").then((data)=>{
       setpyq(data.data)
     }).catch((err)=>{
       console.error(err);
     })
 
-    axios.get("http://localhost:8000/CheckLogin" ,{ withCredentials: true,}).then((data)=>{
+    axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{ withCredentials: true,}).then((data)=>{
       if (data.status == 200)
       {
        setisLogin(true)
@@ -117,7 +117,7 @@ const Exam = () => {
           Subject:Subject,
           Pdflink:url
         }
-        axios.post("http://localhost:8000/pyqs/upload",pyqDetails).then((res)=>{
+        axios.post("https://virtual-help-backend.vercel.app/pyqs/upload",pyqDetails).then((res)=>{
           
           // alert(res.data.message)
           toast.success(res.data.message)
@@ -149,7 +149,7 @@ const Exam = () => {
       Subject:Subject
       
     }
-    axios.post("http://localhost:8000/pyqs/search" , Search).then((data)=>{
+    axios.post("https://virtual-help-backend.vercel.app/pyqs/search" , Search).then((data)=>{
       if (data.data.length !== 0){
       setpyq(data.data)
       }
