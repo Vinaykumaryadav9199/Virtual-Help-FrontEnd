@@ -13,7 +13,7 @@ export const BlogsPage = () => {
  
   try{
    
-    await axios.post("http://localhost:8000/BlogsPage",{id}).then((res)=>{
+    await axios.post("https://virtual-help-backend.vercel.app/BlogsPage",{id}).then((res)=>{
       
       setData(res.data)
       console.log(res.data)
