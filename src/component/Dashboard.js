@@ -42,11 +42,12 @@ const DeleteNotes = (ObjectId, filePath) => {
     setTimeout(() => {
       toast.success(data.data.message)
     }, 1);
+    
   }).catch((err) => {
     toast.error(err)
 
   })
-  window.location.reload();
+  
 
 }
 
@@ -94,7 +95,7 @@ const DeletePyqs = (ObjectId, filePath) => {
     toast.error(err)
   })
 
-  window.location.reload();
+  
 }
 
 const DeleteBlog = (ObjectId, filePath) => {
@@ -141,7 +142,7 @@ const DeleteBlog = (ObjectId, filePath) => {
     toast.error(err)
   })
   
-  window.location.reload();
+ 
 
 }
 
