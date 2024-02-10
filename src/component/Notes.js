@@ -106,11 +106,11 @@ const uploadTask =  uploadBytesResumable(storageRef, File);
       axios.post("https://virtual-help-backend.vercel.app/notes/upload",notes).then((res)=>
       {
         console.log(res);
-        // alert(res.data.message)
+        alert(res.data.message)
         toast.success(res.data.message)
         setPercent("")
       }).catch((err)=>{
-        // console.log(err);
+         console.log(err);
         toast.error(err)
       })   
 
