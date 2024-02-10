@@ -109,6 +109,7 @@ const uploadTask =  uploadBytesResumable(storageRef, File);
         alert(res.data.message)
         toast.success(res.data.message)
         setPercent("")
+        setpop(false)
       }).catch((err)=>{
          console.log(err);
         toast.error(err)
@@ -165,10 +166,12 @@ const uploadTask =  uploadBytesResumable(storageRef, File);
         if (data.data.length !==0){
           
         setgetNotes (data.data)
+        setpop(false)
         }else
         {
           // alert("Notes Not Available")
           toast.info("Not Available")
+          setpop(false)
         }
 
         })
