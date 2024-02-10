@@ -180,11 +180,11 @@ const Dashboard = () => {
       }
       else  {
 
-          // navigate("/")
+          navigate("/")
       
       }
     }).catch((err) => {
-      // navigate("/")
+       navigate("/")
      
     })
 
@@ -202,7 +202,7 @@ const Dashboard = () => {
       toast.error(err)
     })
   },
-    []
+    
   )
 
   const logoutHandel = () => {
@@ -321,12 +321,7 @@ const Dashboard = () => {
 
               return (
 
-                <div
-
-                  data-aos="zoom-in-up"
-                // data-aos-anchor-placement="center-bottom"
-
-                >
+             
                   <div className=' flex flex-col flex-wrap h-[55vh] p-2  m-2  justify-evenly items-center bg-violet-100  shadow-md shadow-slate-3 rounded-lg'>
                     {/* <Document className=' w-52 h-52 m-3 overflow-hidden' file={notes.Pdflink}>
                        <Page pageNumber={1} className='w-40  h-40'/>
@@ -338,7 +333,7 @@ const Dashboard = () => {
                       <a className=' outline-none z-10'><button className='text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900' onClick={()=>{DeleteNotes(notes._id, notes.Pdflink)}}>Delete</button></a>
                     </div>
                   </div>
-                </div>
+             
 
 
 
