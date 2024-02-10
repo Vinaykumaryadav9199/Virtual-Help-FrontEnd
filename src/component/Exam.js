@@ -120,12 +120,14 @@ const Exam = () => {
         axios.post("https://virtual-help-backend.vercel.app/pyqs/upload",pyqDetails).then((res)=>{
           
           // alert(res.data.message)
+          setpop(false)
           toast.success(res.data.message)
           setPercent("")
          
 
         }).catch((err)=>{
           // alert(err)
+          setpop(false)
           toast.error(err)
         })
         
@@ -152,9 +154,11 @@ const Exam = () => {
     axios.post("https://virtual-help-backend.vercel.app/pyqs/search" , Search).then((data)=>{
       if (data.data.length !== 0){
       setpyq(data.data)
+      setpop(false)
       }
       else{
         // alert("No PYQ Avialable")
+        setpop(false)
         toast.info("Not Avialable ")
       }
 
