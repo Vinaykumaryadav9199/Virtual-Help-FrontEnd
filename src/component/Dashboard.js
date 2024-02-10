@@ -170,7 +170,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     axios.get("https://virtual-help-backend.vercel.app/CheckLogin" ,{ withCredentials: true }).then((data) => {
-      console.log(data.status)
+     
 
       if (data.status == 200) {
 
@@ -317,7 +317,7 @@ const Dashboard = () => {
           {
             Notes.map((notes) => {
               pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-              console.log(notes._id)
+             
 
               return (
 
